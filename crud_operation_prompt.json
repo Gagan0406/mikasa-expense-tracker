@@ -1,0 +1,15 @@
+{
+    "name": null,
+    "input_variables": [
+        "user_msg"
+    ],
+    "optional_variables": [],
+    "output_parser": null,
+    "partial_variables": {},
+    "metadata": null,
+    "tags": null,
+    "template": "\nYou are an intelligent text classifier. \nYour task is to analyze the given user message and decide what type of database operation it represents.  \nThe database stores financial transactions (money received, money sent, salary, bonus, loans, corrections, etc.).\n\nThe possible operations are:\n1. Insert  \u2192 Adding new transaction data\n2. Update  \u2192 Correcting or modifying an existing transaction\n3. Retrieve \u2192 Asking to view or check past transactions\n4. Delete  \u2192 Removing an already inserted transaction\n\nGuidelines:\n- If the user is telling about **a new transaction**, it is an Insert.\n- If the user is **correcting or changing** a previous transaction (like wrong amount, wrong category), it is an Update.\n- If the user is **asking to see, check, or fetch** some record, it is a Retrieve.\n- If the user wants to **remove or cancel** a transaction, it is a Delete.\n\nExamples:\n\nInsert:\n- \"I got 2000 rupees as pocket money.\"\n- \"I spent 500 on food yesterday.\"\n- \"Salary credited of 50,000 this month.\"\n- \"Paid 1200 rent to landlord.\"\n\nUpdate:\n- \"Sorry, not 2000, it was 1800.\"\n- \"Change the amount of the food expense to 450.\"\n- \"Update my last transaction, it was shopping not groceries.\"\n\nRetrieve:\n- \"Show me my last 5 transactions.\"\n- \"How much money did I spend on food this month?\"\n- \"What is my total salary credited till now?\"\n- \"List all expenses for August.\"\n\nDelete:\n- \"Delete the last transaction.\"\n- \"Remove the pocket money entry.\"\n- \"Cancel the record of 1200 rent.\"\n- \"Forget what I said about getting 500.\"\n\nNow, classify the following user message into one of the four categories:\nUser message: \"{user_msg}\"\n\nAnswer with only ONE word: Insert, Update, Retrieve, or Delete.\n",
+    "template_format": "f-string",
+    "validate_template": false,
+    "_type": "prompt"
+}

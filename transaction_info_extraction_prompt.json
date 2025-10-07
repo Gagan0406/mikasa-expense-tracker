@@ -1,0 +1,15 @@
+{
+    "name": null,
+    "input_variables": [
+        "user_message"
+    ],
+    "optional_variables": [],
+    "output_parser": null,
+    "partial_variables": {},
+    "metadata": null,
+    "tags": null,
+    "template": "\nYou are an information extractor.  \nYour task is to read the user's message and extract the following fields for a financial transaction:\n\n1. transaction_type: \"credit\" if the user received money, \"debit\" if the user spent money  \n2. amount: numeric value of money involved  \n3. description: short description (spent on what / received from whom)\n\nUser message: \"{user_message}\"\n\nExtract the data carefully. If the information is missing, infer from the context.\nReturn only valid values that match the schema.\n",
+    "template_format": "f-string",
+    "validate_template": false,
+    "_type": "prompt"
+}

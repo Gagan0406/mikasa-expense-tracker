@@ -1,0 +1,15 @@
+{
+    "name": null,
+    "input_variables": [
+        "input"
+    ],
+    "optional_variables": [],
+    "output_parser": null,
+    "partial_variables": {},
+    "metadata": null,
+    "tags": null,
+    "template": "you will be given a message of user,you have to classify wether the user wants advice related to money , took some action with money like gained or loss , sent or recived or not talking about money as \"action taken\" , \"needs advice\" ,\"other topic\".\nrules for \"action taken\"(sent or recived money,gained or lossed money) are:\n- if user recieved money\n- if user sent money\n- if user gave loan\n- if user took loan\n- if user purchased something\n- if user sold something and recived money for that\n- if user recieved salary\n- if user recieved bonuses\n- if user made some income\n- if user paid for expenses\n- if user paid for bills and rent\n- if user paid for the fees\n- if user got some refund or lottery\n- if user lost money in some investment or gambling\n(you have to be wise enough to categorise tbis category mind it you have to make sure that first the action is taken with money and then only you have to classify it in this category not else , in this case we will be upadting the database related to user as action is being taken with money)\n\nrules for \"needs advice\" (advice related to investment or market or expenditure or savings or any financial advice) are:\n- if user is asking for investment advice\n- if user is asking for market trends\n- if user is asking for savings advice\n- if user is asking for expenditure advice\n- if user is asking for financial advice\n- if user is asking for tax advice\n- if user is asking for budget advice\n- if user is asking for retirement advice\n- if user is asking for insurance advice\n- if user is asking for debt advice\n- if user is asking for credit advice\n- if user is asking for loan advice\n- at what percent should we give or take the loan \n- is loan beneficial or not\n- if user is asking for tips to manage money\n(in this no action has been taken user is just asking for advice related to money in this case we will not be updating any database related to user,\n in this case we will be providing advice to user related to money,and only in this case you will classify to this category only not in any other case)\n \nrules for \"other topic\" (not related to money or finance):\n(anything which is not related to money or finance but if user is asking about currency convert or general questions like stock price of a company, then only classify to this category)\n\n**(differentiate between \"needs advice\" and \"other topic\" carefully if user is asking for advice related to money then classify to \"needs advice\" category only not to this category,if user is asking for a fact check for the price of a stock and things like that then only classify to this category not to \"needs advice\" category)**\n\n\nuser message:{input}:",
+    "template_format": "f-string",
+    "validate_template": false,
+    "_type": "prompt"
+}

@@ -1,0 +1,17 @@
+{
+    "name": null,
+    "input_variables": [
+        "amount",
+        "description",
+        "transaction_type"
+    ],
+    "optional_variables": [],
+    "output_parser": null,
+    "partial_variables": {},
+    "metadata": null,
+    "tags": null,
+    "template": "\nYou are an expert SQL query generator. \nYour task is to create a **PostgreSQL INSERT query** for storing financial transactions in the following schema:\n\nSchema:\nCREATE TABLE transactions (\n    id SERIAL PRIMARY KEY,\n    transaction_type VARCHAR(10) CHECK (transaction_type IN ('credit','debit')),\n    amount NUMERIC NOT NULL,\n    description TEXT,\n    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP\n);\n\nRules:\n1. Always insert into `transaction_type`, `amount`, and `description` columns. \n2. Do NOT include `id` or `created_at` in the query (Postgres will auto-generate them).\n3. Use correct SQL syntax with single quotes for text values.\n4. The transaction_type must always be either 'credit' or 'debit'.\n5. Output only the SQL query string.\n\nExamples of correct queries:\nINSERT INTO transactions (transaction_type, amount, description)\nVALUES ('credit', 2000, 'pocket money');\n\nINSERT INTO transactions (transaction_type, amount, description)\nVALUES ('debit', 500, 'grocery shopping');\n\nINSERT INTO transactions (transaction_type, amount, description)\nVALUES ('credit', 10000, 'salary for September');\n\nNow generate a valid PostgreSQL INSERT statement for these values:\n\n- transaction_type: {transaction_type}\n- amount: {amount}\n- description: {description}\n",
+    "template_format": "f-string",
+    "validate_template": false,
+    "_type": "prompt"
+}
