@@ -1,17 +1,29 @@
+import sys
+import os
+# Add the current directory to sys.path to ensure Advisor can be imported
+sys.path.append(os.path.dirname(os.path.abspath(__file__)))
+
 from langchain_google_genai import ChatGoogleGenerativeAI
-from langchain_core.messages import BaseMessage,HumanMessage
+from langchain_core.messages import BaseMessage, HumanMessage, AIMessage
 from langchain_core.prompts import load_prompt
-from langgraph.graph import StateGraph,START, END
+from langgraph.graph import StateGraph, START, END
 from langgraph.graph.message import add_messages
-from langgraph.prebuilt import ToolNode,tools_condition
+from langgraph.prebuilt import ToolNode, tools_condition
 from langgraph.checkpoint.sqlite import SqliteSaver
-from typing import TypedDict,Annotated,Literal
+from typing import TypedDict, Annotated, Literal
 from pydantic_models import OutputSchema, OperationType, TransactionSchema, querySchema, queryEvaluatorSchema
 import sqlite3
-from tools import mytools
 from dotenv import load_dotenv
 
+# Import the advisor graph builder
+from Advisor.graph import build_graph as build_advisor_graph
+
+from tools import mytools
+
 load_dotenv()
+
+# Initialize the advisor graph
+advisor_graph = build_advisor_graph()
 
 category_of_message_prompt = load_prompt("category_of_message_prompt.json")
 crud_operation_prompt = load_prompt("crud_operation_prompt.json")
@@ -60,8 +72,30 @@ def agent_router(state: chatState)->Literal["advisor","action","chatbot"]:
     
 def advisor_func(state: chatState):
     messages = state['messages']
-    response = llm_with_tools.invoke(messages)
-    return {'messages':[response]}
+    user_query = messages[-1].content
+
+    try:
+        advisor_result = advisor_graph.invoke({
+            "user_query": user_query
+        })
+
+        final_response = advisor_result.get(
+            "final_output",
+            "I apologize, but I couldn't generate a complete advisory response. Could you please rephrase your question?"
+        )
+        
+        # Ensure we have a meaningful response
+        if not final_response or final_response.strip() == "":
+            final_response = "I'm having trouble processing your advisory request. Please try asking in a different way."
+
+        return {
+            "messages": [AIMessage(content=final_response)]
+        }
+    except Exception as e:
+        print(f"Advisor error: {str(e)}")
+        return {
+            "messages": [AIMessage(content="I encountered an issue while processing your advisory request. Please try again or rephrase your question.")]
+        }
 
 def action_taker_func(state: chatState):
     messages = state['messages']
@@ -142,8 +176,6 @@ def query_executor(state:chatState):
 
 
 
-def rag(state:chatState):
-    pass
 
 graph = StateGraph(chatState)
 
@@ -156,14 +188,13 @@ graph.add_node('insert',inserter)
 graph.add_node('update',updater)
 graph.add_node('delete',deleter)
 graph.add_node('retrieve',retriever)
-graph.add_node('RAG pipeline',rag)
 graph.add_node('query evaluator',query_evaluator)
 graph.add_node('query optimizer',query_optimizer)
 graph.add_node('query executor',query_executor)
 
+graph.add_edge('advisor', END)
 graph.add_edge(START,'director')
 graph.add_conditional_edges('director',agent_router)
-graph.add_edge('advisor','RAG pipeline')
 graph.add_conditional_edges('action',action_router)
 graph.add_edge('insert','query evaluator')
 graph.add_edge('update','query evaluator')

@@ -1,0 +1,119 @@
+1. Family Floater Health Plan
+Category: Health
+Description: One policy covering entire family under a single sum insured.
+Ideal For: Small to medium families.
+Premium Range: ₹600–₹1,500 per month
+Key Benefits: Cashless treatment, hospitalization charges, free checkups.
+Eligibility: Adults 18–65, children 90 days+.
+
+2. Individual Health Insurance
+Category: Health
+Description: Personal hospitalization coverage.
+Ideal For: Individuals without employer insurance.
+Premium Range: ₹500–₹1,200 per month
+Key Benefits: Room rent, ICU, diagnostics.
+Eligibility: 18–65.
+
+3. Senior Citizen Health Plan
+Category: Health
+Description: Specialized plan with higher coverage for older adults.
+Ideal For: Users age 60+
+Premium Range: ₹1,700–₹3,000 per month
+Key Benefits: OPD, pre-existing disease cover.
+Eligibility: 60–80.
+
+4. Critical Illness Health Policy
+Category: Health
+Description: Lump sum payout on diagnosis of major illnesses.
+Ideal For: Users with family history of serious illness.
+Premium Range: ₹300–₹800 per month
+Key Benefits: Covers cancer, organ failure, heart issues.
+Eligibility: 18–60.
+
+5. Top-Up Health Insurance
+Category: Health
+Description: Additional coverage beyond existing health policy.
+Ideal For: Users with corporate insurance needing extra coverage.
+Premium Range: ₹150–₹500 per month
+Key Benefits: High sum insured at low premium.
+Eligibility: 18–65.
+
+6. Maternity & Newborn Care Plan
+Category: Health
+Description: Covers delivery, newborn care, and pre/post-natal expenses.
+Ideal For: Young couples planning a baby.
+Premium Range: ₹700–₹2,000 per month
+Key Benefits: Delivery cover, newborn vaccinations.
+Eligibility: Women aged 21–40.
+
+7. Hospital Cash Benefit Plan
+Category: Health
+Description: Pays fixed daily amount for each day of hospitalization.
+Ideal For: Users needing income replacement during hospitalization.
+Premium Range: ₹200–₹600 per month
+Key Benefits: Daily cash, ICU double benefit.
+Eligibility: 18–60.
+
+8. Disease-Specific Health Cover (e.g., Diabetes, Cardiac)
+Category: Health
+Description: Tailored policy for chronic conditions.
+Ideal For: Users with lifestyle diseases.
+Premium Range: ₹300–₹1,000 per month
+Key Benefits: Outpatient checks, medicine coverage.
+Eligibility: 25–65.
+
+9. OPD & Pharmacy Cover
+Category: Health
+Description: Covers doctor's visits, medicines, and diagnostic tests without hospitalization.
+Ideal For: Users with monthly OPD expenses.
+Premium Range: ₹250–₹700 per month
+Key Benefits: Unlimited doctor visits, discounts.
+Eligibility: 18–65.
+
+10. Student Health & Travel Plan
+Category: Health
+Description: Covers hospitalizations + travel emergencies abroad.
+Ideal For: Students studying overseas.
+Premium Range: ₹800–₹1,500 per month
+Key Benefits: Medical evacuation, cashless abroad.
+Eligibility: 15–30.
+
+11. Accident Medical Expense Policy
+Category: Health
+Description: Covers emergency hospitalization due to accidents.
+Ideal For: Riders and travellers.
+Premium Range: ₹200–₹600 per month
+Key Benefits: Emergency care, ambulance cover.
+Eligibility: 18–65.
+
+12. Family Medical Booster Plan
+Category: Health
+Description: Adds extra coverage to family floater.
+Ideal For: Medium-income households.
+Premium Range: ₹300–₹800 per month
+Key Benefits: Increases sum insured.
+Eligibility: 18–65.
+
+13. Daily Income Protection Health Plan
+Category: Health
+Description: Offers daily payout during hospitalization or injury.
+Ideal For: Users with unstable monthly income.
+Premium Range: ₹200–₹500 per month
+Key Benefits: Daily allowance.
+Eligibility: 18–60.
+
+14. Preventive Health Checkup Plan
+Category: Health
+Description: Annual health screening packages.
+Ideal For: All adults for early detection.
+Premium Range: ₹100–₹300 per month
+Key Benefits: Blood tests, screenings.
+Eligibility: 18–65.
+
+15. Cancer Care Protection Plan
+Category: Health
+Description: Staged payouts for early to late cancer diagnosis.
+Ideal For: Families with cancer history.
+Premium Range: ₹300–₹700 per month
+Key Benefits: Multi-stage payouts.
+Eligibility: 18–60.

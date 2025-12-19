@@ -1,0 +1,85 @@
+1. Pradhan Mantri Jeevan Jyoti Bima Yojana (PMJJBY)
+Category: Government
+Description: Low-cost life insurance with ₹2 lakh cover.
+Ideal For: Low-income individuals needing affordable cover.
+Annual Premium: ₹330
+Eligibility: Age 18–50.
+
+2. Pradhan Mantri Suraksha Bima Yojana (PMSBY)
+Category: Government
+Description: Accidental insurance providing upto ₹2 lakh cover.
+Annual Premium: ₹20
+Eligibility: Age 18–70.
+
+3. Atal Pension Yojana (APY)
+Category: Government
+Description: Pension scheme offering guaranteed monthly pension after retirement.
+Ideal For: Unorganized sector workers.
+Premium Range: ₹100–₹500 per month
+Eligibility: 18–40.
+
+4. Ayushman Bharat – PMJAY
+Category: Government
+Description: Health insurance of ₹5 lakh per family per year for hospitalization.
+Ideal For: Low-income families.
+Premium: Free
+Eligibility: Based on SECC economic criteria.
+
+5. Sukanya Samriddhi Yojana (SSY)
+Category: Government
+Description: Savings scheme for girl child with high interest rates.
+Ideal For: Parents of girl children.
+Premium: ₹250–₹12,500 monthly
+Eligibility: Girl child <10 years.
+
+6. PM-Kisan Samman Nidhi
+Category: Government
+Description: Income support of ₹6,000 per year to farmers.
+Eligibility: Land-owning farmers.
+
+7. National Pension System (NPS)
+Category: Government
+Description: Retirement savings scheme with market-linked growth.
+Premium: Flexible (₹500–₹10,000 monthly).
+Eligibility: Citizens aged 18–70.
+
+8. Rashtriya Swasthya Bima Yojana (RSBY)
+Category: Government
+Description: Health insurance for BPL families.
+Coverage: ₹30,000 per year
+Eligibility: BPL households.
+
+9. PM Awas Yojana (PMAY)
+Category: Government
+Description: Subsidy on home loans for economically weaker sections.
+Eligibility: EWS, LIG, MIG families.
+
+10. Stand-Up India Scheme
+Category: Government
+Description: Loans for women and SC/ST entrepreneurs.
+Eligibility: Age 18+, entrepreneur.
+
+11. Mudra Loan (PMMY)
+Category: Government
+Description: Loans for small businesses (Shishu, Kishor, Tarun categories).
+Range: ₹50,000–₹10 lakh.
+
+12. Pradhan Mantri Fasal Bima Yojana (PMFBY)
+Category: Government
+Description: Crop insurance for farmers against natural calamities.
+Eligibility: Farmers with crop loans.
+
+13. Ujjwala Yojana
+Category: Government
+Description: LPG connection subsidy for rural households.
+Eligibility: BPL families.
+
+14. Senior Citizens Savings Scheme (SCSS)
+Category: Government
+Description: High interest rate savings for senior citizens.
+Eligibility: Age 60+.
+
+15. Digital Health Mission ID
+Category: Government
+Description: Unique health ID for digital medical records.
+Eligibility: All citizens.

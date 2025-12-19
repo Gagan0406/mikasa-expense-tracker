@@ -3,3 +3,4 @@ ngrok.exe
 /__pycache__
 /newenv
 .env
+venv
